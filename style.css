@@ -618,7 +618,7 @@ nav #icon{
     .download-app{
         flex-flow: column;
     }
-    .download-app span img{
+    .item{
         margin: 8px;
     }
 }
