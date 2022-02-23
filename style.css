@@ -193,6 +193,7 @@ body{
     height: 30px;
     width: 30px;
 }
+
 .offer a{
     text-decoration: none;
     color: black;
@@ -286,6 +287,7 @@ body{
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 5px;
+      margin-bottom: 40px;
   }
   .blog{
       width: 214px;
@@ -302,9 +304,60 @@ body{
   .text-success{
       color: #2caee2;
   }
+  .arrows{
+      text-align: center;
+      margin: 30px 0px;
+  }
+
+
+  /* Footer style  */
+  footer{
+      background-image: url('./images/footer-bg.png');
+      background-repeat: no-repeat;
+      background-size: initial;
+      background-position: right bottom;
+  }
+  .footer{
+      width: 80%;
+      margin: 0 auto;
+
+  }
+  .tm{
+      margin: 20px 0px 0px;
+      display: flex;
+  }
+  .tm img{
+      height: 40px;
+  }
+  .tm span{
+        font-size: 25px;
+        font-weight: bold;
+        margin: 0 10px;
+  }
+  .links{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2rem;
+  }
+  .contact{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .contact-icon{
+      margin: 6px 0px;
+      display: flex;
+      align-items: center;
+  }
+  .contact-icon img{
+    height: 15px;
+    width: 15px;
+}
+.contact-icon small{
+    margin: 0 0 0 8px;
+}
 
 @media (max-width: 688px){
-    .banner, .about-us, .consultation-wrapper, .services, .steps-container, .popular-container, .offerings-container, .part, .varified-container, .part-description, .questions, .blogs{
+    .banner, .about-us, .consultation-wrapper, .services, .steps-container, .popular-container, .offerings-container, .part, .varified-container, .part-description, .questions, .blogs, .links{
         grid-template-columns: repeat(1, 1fr);
     }
 }
