@@ -222,19 +222,18 @@ body{
     background-repeat: no-repeat;
 }
 .part-banner img{
-    width: 80%;
+    width: 90%;
 }
 
 /* Frequently questions style */
 .questions{
-    height: 520px;
 }
 .questions-banner{
     background-image: url('./images/questions/bg.png');
     background-repeat: no-repeat;
     background-size: initial;
     padding-left: 85px;
-    height: auto;
+    height: 520px;
 }
 .questions-banner img{
     margin-top: -60px;
@@ -280,8 +279,28 @@ body{
     transition: max-height 0.2s ease-out;
   }
 
+  /* Blogs style */
+  .blogs{
+      width: 80%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 5px;
+  }
+  .blog img{
+      border-radius: 10px;
+  }
+  .blog-details{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .text-success{
+      color: #2caee2;
+  }
+
 @media (max-width: 688px){
-    .banner, .about-us, .consultation-wrapper, .services, .steps-container, .popular-container, .offerings-container, .part, .varified-container, .part-description, .questions{
+    .banner, .about-us, .consultation-wrapper, .services, .steps-container, .popular-container, .offerings-container, .part, .varified-container, .part-description, .questions, .blogs{
         grid-template-columns: repeat(1, 1fr);
     }
 }
