@@ -308,6 +308,15 @@ body{
       text-align: center;
       margin: 30px 0px;
   }
+  .blog-arrows{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+  }
+  .blog-arrows img{
+      margin: 0px 5px;
+  }
 
 
   /* Footer style  */
@@ -363,6 +372,7 @@ body{
 }
 .copyright{
     display: block;
+    text-align: center;
     margin-top: 10px;
 }
 
