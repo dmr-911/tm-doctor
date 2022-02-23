@@ -3,7 +3,7 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-.banner, .about-us{
+.banner, .about-us, .consultation-wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -78,8 +78,27 @@ body{
 }
 
 
+/* Consultation styles */
+.consultation{
+    margin-top: -100px;
+    height: 700px;
+}
+.consultation-description{
+    padding: 40px 40px 0px 100px
+}
+.consultation-banner{
+    background-image: url('./images/consultation/Vector\ 4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 501px;
+}
+.consultation-banner img{
+    margin-top: 60px;
+    width: 80%;
+}
+
 @media (max-width: 688px){
-    .banner, .about-us{
+    .banner, .about-us, .consultation-wrapper{
         grid-template-columns: repeat(1, 1fr);
     }
 }
