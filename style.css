@@ -135,7 +135,7 @@ nav #icon{
     width: 100%;
 }
 .about-details{
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 40px;
@@ -155,11 +155,11 @@ nav #icon{
 /* Consultation styles */
 .consultation{
     margin-top: -100px;
-    height: 700px;
+    height: auto;
     overflow: hidden;
 }
 .consultation-description{
-    padding: 40px 40px 0px 100px
+    padding: 40px 40px 0px 100px;
 }
 .consultation-banner{
     background-image: url('./images/consultation/Vector\ 4.png');
@@ -281,7 +281,7 @@ nav #icon{
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 1.5rem;
 }
 
 /* Part style */
@@ -589,5 +589,14 @@ nav #icon{
     }
     nav ul.show{
         left: 0;
+    }
+    .about-details, .contact-title{
+        width: 100%;
+        text-align: center;
+    }
+    .consultation-description, .part-description, .varified-container, .services, .steps{
+        padding: 0;
+        width: 80%;
+        margin: 0 auto;
     }
 }
