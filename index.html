@@ -8,25 +8,59 @@
     <title>tm-doctor</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/15c1546edc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            })
+        })
+    </script>
 </head>
 <body>
     <header>
-        <!-- <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <label for="" class="logo">Design</label>
-            <ul>
-                <li><a class="active" href="#">Doctor</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Pharmacy Owner</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-        </nav> -->
+        <nav>
+        <div class="logo">
+            <img src="images/Vector.png" alt="">
+            <img src="images/TM.png" alt="">
+        </div>
+        <ul>
+            <select id="cars" class="option">
+                <option value="doctor">Doctor</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+              <select id="cars" class="option">
+                <option value="services">Services</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+              <select id="cars" class="option">
+                <option value="owner">Owner</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+
+        <div class="account">
+            <img src="images/globe.png" alt="">
+            <select id="cars" class="option">
+                <option value="en">en</option>
+                <option value="ban">ban</option>
+              </select>
+              <button class="login">Login</button>
+        </div>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+        </nav>
     </header>
     <main>
         <!-- Banner section started -->

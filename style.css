@@ -3,6 +3,13 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
+
 .banner, .about-us, .consultation-wrapper, .steps-container, .offerings-container, .part, .questions{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -11,64 +18,73 @@ a:hover{
     color: blue!important;
 }
 
-/* nav styles */
+/* Navbar style */
+header{
+    box-shadow: 10px 10px 8px #888888;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
 nav{
-    height: 80px;
-    background-color: #2caee2;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: 50px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
 }
-label.logo{
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
+
+nav ul {
+
 }
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-nav ul li{
+nav li {
     display: inline-block;
-    line-height: 80px;
-    margin: 0 50x;
+    margin: 0 8px;
+    line-height: 40px;
 }
-nav ul li a {
-    color: white;
-    font-size: 17px;
+nav a, .option{
+    color: #333333;
+    font-size: 14px;
     text-transform: uppercase;
-    padding: 7px 13px;
+    border: 1px solid transparent;
+    padding: 0px 10px;
     border-radius: 3px;
 }
-a.active, a:hover{
-    background: #1b9bff;
+a.active, a:hover, .option:hover{
+    border: 1px solid #333333;
     transition: .5s;
+    cursor: pointer;
 }
-.checkbtn{
+nav #icon{
+    color: #333333;
     font-size: 30px;
-    color: white;
-    float: right;
     line-height: 80px;
+    float: right;
     margin-right: 40px;
     cursor: pointer;
     display: none;
 }
-#check{
-    display: none;
+
+.account{
+    display: flex;
 }
-li{
-    list-style: none;
-}
-li a{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    box-sizing: border-box;
+.login{
+    background-color:#2CAEE2;
+    border : none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
 }
 
 /* Banner styles */
 .banner{
     width: 100%;
-    height: 596px;
+    /* height: 596px; */
     margin-bottom: 10px;
     overflow: hidden;
 }
@@ -80,8 +96,6 @@ li a{
     align-items: center;
 }
 .banner-details{
-    /* margin-left: 210px;
-    padding-top: 150px; */
     width: 320px;
     padding-left: 110px;
 }
@@ -475,55 +489,67 @@ li a{
     margin-top : -30px
 }
 
-@media (max-width: 952px){
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
-}
-@media (max-width: 858px){
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
 
-    }
-    a:hover, a.active{
-        background: none;
-        color: #0082e6;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
-}
 @media (min-width: 768px) and (max-width: 992px){
     .blogs, .varified-container{
         grid-template-columns: repeat(3, 1fr);
     }
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 17px;
+    }
 }
-@media (max-width: 768px) {
+
+@media (min-width: 769px) and (max-width: 1100px){
+    nav{
+        justify-content: space-between;
+    }
+    nav ul{
+        display: none;
+    }
+}
+@media (min-width: 669px) and (max-width: 768px) {
     .banner, .about-us, .consultation-wrapper, .services, .steps-container, .popular-container, .offerings-container, .part, .varified-container, .part-description, .questions, .blogs, .links, .contact, .users-reviews-section{
         grid-template-columns: repeat(2, 1fr);
-    }}
+    }
+    nav{
+        justify-content: space-between;
+    }
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 80px;
+        left: -120%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li{
+        display: block;
+    }
+    nav a{
+        color: white;
+    }
+    a.active, a:hover{
+        border: none;
+    }
+    nav ul.show{
+        left: 0;
+    }
+}
 @media (max-width: 688px){
     .banner, .about-us, .consultation-wrapper, .services, .steps-container, .popular-container, .offerings-container, .part, .varified-container, .part-description, .questions, .blogs, .links, .contact, .users-reviews-section{
         grid-template-columns: repeat(1, 1fr);
@@ -534,7 +560,7 @@ li a{
     .consultation{
         margin-top: 0;
     }
-    .offerings, .blog, .address, .social, .download-app{
+    .offerings, .blog, .address, .social, .download-app, .offer{
         margin: 0 auto;
     }
     .steps{
@@ -553,5 +579,33 @@ li a{
     }
     .new-arrows{
         margin-left: 120px;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 65px;
+        left: -120%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li{
+        display: block;
+    }
+    nav a{
+        color: white;
+    }
+    a.active, a:hover{
+        border: none;
+    }
+    nav ul.show{
+        left: 0;
     }
 }
