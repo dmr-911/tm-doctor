@@ -79,6 +79,7 @@ nav #icon{
     padding: 5px 15px;
     border-radius: 5px;
     color: white;
+    cursor: pointer;
 }
 
 /* Banner styles */
@@ -530,6 +531,17 @@ nav #icon{
     }
     nav ul{
         display: none;
+    }
+    .users{
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+    .arrows{
+        justify-content: center;
+    }
+    .new-arrows{
+        margin-left: 120px;
     }
 }
 @media (max-width: 688px){
