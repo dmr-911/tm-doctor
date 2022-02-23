@@ -3,7 +3,7 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-.banner, .about-us, .consultation-wrapper{
+.banner, .about-us, .consultation-wrapper, .steps-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -112,8 +112,41 @@ body{
     text-align: center;
 }
 
+/* Steps style  */
+.steps-container{
+    overflow: hidden;
+    height: auto;
+}
+.steps-banner{
+    background-image: url('./images/steps/background.png');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+.steps-banner img{
+    height: 495px;
+    width: 250px;
+}
+.steps{
+    display: flex;
+    flex-flow: column;
+}
+.step{
+    display: flex;
+}
+.step img{
+    height: 40px;
+    width: 40px;
+}
+.step-description{
+    padding: 0px 30px;
+}
+.step-description h4 {
+    margin: 5px 0 0 0;
+}
+
 @media (max-width: 688px){
-    .banner, .about-us, .consultation-wrapper, .services{
+    .banner, .about-us, .consultation-wrapper, .services, .steps-container{
         grid-template-columns: repeat(1, 1fr);
     }
 }
