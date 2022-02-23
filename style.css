@@ -306,6 +306,7 @@ nav #icon{
 }
 .questions-banner img{
     margin-top: -60px;
+    width: 100%;
 }
 .accordian-container{
     width: 85%;
