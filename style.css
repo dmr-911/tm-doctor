@@ -3,7 +3,7 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-.banner, .about-us, .consultation-wrapper, .steps-container, .offerings-container{
+.banner, .about-us, .consultation-wrapper, .steps-container, .offerings-container, .part{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -210,8 +210,25 @@ body{
     grid-gap: 2rem;
 }
 
+/* Part style */
+.part{
+}
+.part-description{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+.part-banner{
+    background-image: url('./images/part/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.part-banner img{
+    width: 80%;
+}
+
+
 @media (max-width: 688px){
-    .banner, .about-us, .consultation-wrapper, .services, .steps-container, .popular-container, .offerings-container{
+    .banner, .about-us, .consultation-wrapper, .services, .steps-container, .popular-container, .offerings-container, .part, .varified-container, .part-description{
         grid-template-columns: repeat(1, 1fr);
     }
 }
