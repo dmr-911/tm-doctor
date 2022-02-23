@@ -540,4 +540,18 @@ li a{
     .steps{
         margin-top: 10px;
     }
+    .top-quote-img{
+        margin-top: 0;
+    }
+    .users{
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+    .arrows{
+        justify-content: center;
+    }
+    .new-arrows{
+        margin-left: 120px;
+    }
 }
