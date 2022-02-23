@@ -287,8 +287,12 @@ body{
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 5px;
   }
+  .blog{
+      width: 214px;
+  }
   .blog img{
       border-radius: 10px;
+      width: 214px;
   }
   .blog-details{
       display: flex;
