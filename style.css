@@ -196,10 +196,19 @@ body{
 .offer a{
     text-decoration: none;
     color: black;
-    font-weight: bold;
+    font-weight: 500;
     margin: 2px 0 0 8px;
 }
 
+
+/* varified style */
+.varified-container{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
 
 @media (max-width: 688px){
     .banner, .about-us, .consultation-wrapper, .services, .steps-container, .popular-container, .offerings-container{
