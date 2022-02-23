@@ -34,7 +34,7 @@ body{
     border: 1px solid #2caee2;
     border-radius: 15px;
     color: #fff;
-    padding: 5px 10px;
+    padding: 8px 15px;
 }
 .logo{
     display: d-flex;
@@ -116,6 +116,7 @@ body{
 .steps-container{
     overflow: hidden;
     height: auto;
+    margin-bottom: 55px;
 }
 .steps-banner{
     background-image: url('./images/steps/background.png');
@@ -145,8 +146,39 @@ body{
     margin: 5px 0 0 0;
 }
 
+
+/* Popular style  */
+.popular{
+    text-align: center;
+}
+.popular-container{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+.shop{
+    border: 1px solid;
+    padding: 0 10px 10px 10px;
+}
+.shop-location{
+    display: flex;
+}
+.shop-location img{
+    height: 30px;
+    width: 30px;
+}
+.shop-location p{
+    margin: 0 0 0 5px;
+}
+.btn-popular{
+    margin: 10px;
+}
+
+
 @media (max-width: 688px){
-    .banner, .about-us, .consultation-wrapper, .services, .steps-container{
+    .banner, .about-us, .consultation-wrapper, .services, .steps-container, .popular-container{
         grid-template-columns: repeat(1, 1fr);
     }
 }
