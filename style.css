@@ -63,7 +63,6 @@ a.active, a:hover, .option:hover{
 nav #icon{
     color: #333333;
     font-size: 30px;
-    line-height: 80px;
     float: right;
     margin-right: 40px;
     cursor: pointer;
@@ -251,6 +250,9 @@ nav #icon{
 .offerings-container{
     width: 80%;
     margin: 0 auto;
+}
+.offerings-container img{
+    width: 90%;
 }
 .btn-offerings{
     margin-bottom: 20px;
