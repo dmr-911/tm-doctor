@@ -73,6 +73,9 @@ nav #icon{
 .account{
     display: flex;
 }
+.account-item{
+    margin: 0 5px;
+}
 .login{
     background-color:#2CAEE2;
     border : none;
