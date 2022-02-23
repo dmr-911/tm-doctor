@@ -599,4 +599,14 @@ nav #icon{
         width: 80%;
         margin: 0 auto;
     }
+    .blog{
+        width: auto;
+        margin: 8px;
+    }
+    .download-app{
+        flex-flow: column;
+    }
+    .download-app span img{
+        margin: 8px;
+    }
 }
